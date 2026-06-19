@@ -26,6 +26,7 @@ Custom LDO design in a 7nm FinFET process: two-stage OTA error amplifier driving
 | DC Line regulation @iLOAD: 6mA | 7 mV/V|
 
 ## LDO Specifications ( After AC and STB analysis, with AC at VDD )
+iLoad: 500uA, Vdd: 1V, Vref: 550mV
 
 | Parameter | Value |
 |------------|------------|
@@ -37,3 +38,12 @@ Custom LDO design in a 7nm FinFET process: two-stage OTA error amplifier driving
 | PSRR @2M | -52.20dB |
 | PSRR @10M | -50.66dB |
 | PSRR @100M | -37.40dB |
+
+## LDO Specifications ( After Transient analysis )
+
+| Parameter | Value |
+|------------|------------|
+| Transient Load regulation @1.2v:VDD @iLOAD: 100uA - 6mA | 2.525mV/mA |
+| DC Load regulation @1.2v:VDD @iLOAD: 100uA - 6mA | 0.390 mV/mA|
+| DC Line regulation @iLOAD: 500uA | 2.574 mV/V|
+| DC Line regulation @iLOAD: 6mA | 7 mV/V|
