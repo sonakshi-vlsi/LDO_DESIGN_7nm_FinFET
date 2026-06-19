@@ -46,4 +46,4 @@ iLoad: 500uA, Vdd: 1V, Vref: 550mV
 | Transient Load regulation @1.2v:VDD @iLOAD: 100uA - 6mA | 2.525mV/mA |
 | Transient Load regulation @1v:VDD @iLOAD: 100uA - 6mA | 2.525mV/mA |
 | Transient Line regulation @iLOAD: 500uA | 3 mV/V |
-| Transient Line regulation @iLOAD: 6mA | 7 mV/V|
+| Transient Line regulation @iLOAD: 6mA | 14.3 mV/V|
