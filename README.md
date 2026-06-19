@@ -20,6 +20,10 @@ Custom LDO design in a 7nm FinFET process: two-stage OTA error amplifier driving
 | Output Capacitor | 100 pF |
 | FeedForward Capacitor | 50 fF |
 | Output Resistor (in series with output cap to increase stability) | 50 ohms |
+| DC Load regulation @1v:VDD @iLOAD: 100uA - 6mA | 0.661 mV/mA |
+| DC Load regulation @1.2v:VDD @iLOAD: 100uA - 6mA | 0.390 mV/mA|
+| DC Line regulation @iLOAD: 500uA | 2.574 mV/V|
+| DC Line regulation @iLOAD: 6mA | 0.390 mV/mA|
 
 ## LDO Specifications ( After AC and STB analysis, with AC at VDD )
 
