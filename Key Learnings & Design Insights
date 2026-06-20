@@ -1,0 +1,50 @@
+## Key Learnings & Design Insights
+
+### 1. Stability is the Central LDO Design Challenge
+Achieving phase margin > 45° at realistic on-chip load 
+capacitance (100pF) required a three-part compensation 
+strategy — increasing Miller capacitor, adding a 
+feedforward zero (CFF), and introducing an ESR zero 
+(RESR). No single technique was sufficient alone. 
+Phase margin improved from <10° to 72.75° through 
+iterative compensation tuning.
+
+### 2. GBW Must Be Controlled, Not Maximized
+The OTA used was designed for a GBW of ~933 MHz. 
+In the closed LDO loop, this caused the unity gain 
+frequency to exceed 500 MHz — this is where internal poles 
+degraded phase margin. Reducing GBW by increasing Cc 
+brought UGF to 128.5 MHz, improving both phase margin 
+and gain margin simultaneously. Higher bandwidth is not 
+always better in feedback systems.
+
+### 3. Simulation Artifacts vs Real Results
+Several misleading results were encountered:
+- NaN in STB → iprobe placement issue, not instability
+- Flat line in noise → wrong output node or missing AC source  
+- xxx in ADE outputs → analysis type mismatch
+- −6400 dB PSRR → expression evaluated in wrong analysis
+Learning to distinguish simulation setup errors from 
+real circuit problems is as important as circuit design.
+
+### 4. C_LOAD Choice Affects Credibility
+Using 100 nF load capacitance gave excellent phase margin 
+but is not physically realizable on TSMC N7. Reducing to 
+100 pF (realistic on-chip MIM cap) exposed the true 
+stability challenge and led to the compensation work. 
+
+### 5. PSRR Bandwidth is Limited by UGF
+Supply rejection is only effective within the loop 
+bandwidth. PSRR measured −52.26 dB up to ~2 MHz, 
+degrading beyond the UGF of 128.5 MHz. Improving PSRR 
+at high frequencies requires either higher UGF (risks 
+stability) or feedforward supply rejection paths — a 
+known architectural tradeoff in LDO design.
+
+### 6. Process Corners Validate the Design
+Simulating across VDD (0.8V–1.0V) and temperature 
+(−40°C to 125°C) confirmed phase margin never dropped 
+below 52° and PSRR remained better than −29 dB across 
+all conditions. Corner analysis is not optional — 
+a design that works only at typical conditions is not 
+a real design.
