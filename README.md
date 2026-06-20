@@ -33,7 +33,7 @@ iLoad: 500uA, Vdd: 1V, Vref: 550mV
 |------------|------------|
 | Phase Margin | 72.75 degree |
 | Gain Margin | 15.10dB |
-| UGW | 128.5MHz |
+| UGF | 128.5MHz |
 | Gain Margin Frequency | 2.407GHz |
 | PSRR @10kHz | -52.28dB |
 | PSRR @2M | -52.20dB |
@@ -66,4 +66,4 @@ Worst PM        →  52.77°
 Worst GM        →  6.874 dB (At T = -40°, Vdd= 1.2V, Iload = 5mA)  
 Worst PSRR      →  −29.59 dB  
 Worst Noise     →  4.217 µV/√Hz @ 1kHz  
-Worst UGW       →  422.1 MHz  
+Worst UGF       →  422.1 MHz  
