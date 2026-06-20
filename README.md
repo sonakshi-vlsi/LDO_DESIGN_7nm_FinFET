@@ -48,3 +48,13 @@ iLoad: 500uA, Vdd: 1V, Vref: 550mV
 | Transient Load regulation @1v:VDD @iLOAD: 100uA - 6mA | 2.525mV/mA |
 | Transient Line regulation @iLOAD: 500uA | 3 mV/V |
 | Transient Line regulation @iLOAD: 6mA | 14.3 mV/V|
+
+## LDO Specifications ( After NOISE analysis )
+
+| Frequency | Value |
+|------------|------------|
+| 100 Hz | 10.57 µV/√Hz |
+| 1 kHz | 3.534 µV/√Hz |
+| 10 kHz | 1.188 µV/√Hz |
+| 1 MHz | 139.3 nV/√Hz |
+| 10 MHz | 55.95 nV/√Hz |
