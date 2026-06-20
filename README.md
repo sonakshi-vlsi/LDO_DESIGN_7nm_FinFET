@@ -58,3 +58,9 @@ iLoad: 500uA, Vdd: 1V, Vref: 550mV
 | 10 kHz | 1.188 µV/√Hz |
 | 1 MHz | 139.3 nV/√Hz |
 | 10 MHz | 55.95 nV/√Hz |
+
+Worst PM        →  52.77°   
+Worst GM        →  6.874 dB 
+Worst PSRR      →  −29.59 dB
+Worst Noise     →  4.217 µV/√Hz @ 1kHz
+Worst UGF       →  422.1 MHz 
