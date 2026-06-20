@@ -59,6 +59,9 @@ iLoad: 500uA, Vdd: 1V, Vref: 550mV
 | 1 MHz | 139.3 nV/√Hz |
 | 10 MHz | 55.95 nV/√Hz |
 
+## LDO Specifications Worst Case ( After VT analysis, and varying load current along with Line Voltage and Temperature )
+
+
 Worst PM        →  52.77°   
 Worst GM        →  6.874 dB  
 Worst PSRR      →  −29.59 dB  
